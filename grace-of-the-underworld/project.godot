@@ -15,7 +15,16 @@ run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
+<<<<<<< Updated upstream
 [input]
+=======
+[layer_names]
+
+2d_physics/layer_1="Ground"
+2d_physics/layer_2="Water"
+
+[rendering]
+>>>>>>> Stashed changes
 
 left={
 "deadzone": 0.5,
