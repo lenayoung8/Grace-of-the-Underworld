@@ -1,0 +1,93 @@
+[gd_scene load_steps=9 format=3 uid="uid://di4xoc846bq1d"]
+
+[ext_resource type="Texture2D" uid="uid://cxsog3qs52x1g" path="res://Test SpriteSheet2.png" id="1_6pj7w"]
+[ext_resource type="Script" path="res://character_movement.gd" id="2_am45i"]
+
+[sub_resource type="Animation" id="Animation_ldy85"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_qxueb"]
+resource_name = "walkForward"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_iwgf4"]
+resource_name = "walkLeft"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_vpkoc"]
+resource_name = "walkRight"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_10rfv"]
+_data = {
+"RESET": SubResource("Animation_ldy85"),
+"walkForward": SubResource("Animation_qxueb"),
+"walkLeft": SubResource("Animation_iwgf4"),
+"walkRight": SubResource("Animation_vpkoc")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqr0p"]
+
+[node name="Character" type="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(518, 533)
+script = ExtResource("2_am45i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-213, -41)
+texture = ExtResource("1_6pj7w")
+hframes = 3
+
+[node name="PlayerAnim" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_10rfv")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oqr0p")
