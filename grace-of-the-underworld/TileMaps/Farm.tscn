@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://20rg35xec71w"]
+[gd_scene load_steps=7 format=3 uid="uid://dq2ac4if56jvb"]
 
 [ext_resource type="Texture2D" uid="uid://dqmp5854gn0ph" path="res://tileset assets/Sprout Lands/Water.png" id="1_x3sl2"]
 [ext_resource type="Texture2D" uid="uid://bnmyhlyr7i4bd" path="res://tileset assets/Sprout Lands/Grass.png" id="2_dwbgc"]
