@@ -1,6 +1,7 @@
 # Grace of the Underworld
 
 # Eric’s Time Log: <br />
+~ (0 hours total) ~ <br />
 (1.5 hours) Learning and setting up Godot. <br />
 (0.5 hours) Setting up a menu to play/exit. <br />
 (2.5 hours) Drawing semi-realistic clouds and coding them to move. <br />
@@ -8,7 +9,6 @@
 (1 hour) Coding the multiple layers of the current background rendition for the menu to move <br />
 (2 hours) Worked on combining separate work into 1 project & figured out how to git push & pull - October 10, 2024 <br />
 ~ (9.5 hours total) ~ <br />
-
 (10+ hours | October 21 - October 26): Drawing and designing the portrait art for Persephone. <br />
 (2 hours  | October 27): Scrapping everything above and redesigning. Made three base sprite animations for Persephone. <br />
 (3 hours  | October 28): Coded a base walking system for Persephone using the three base sprite animations above. <br />
