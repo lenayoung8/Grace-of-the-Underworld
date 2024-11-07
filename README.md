@@ -22,5 +22,6 @@ Total time: 24.5 hours
 (1 hour in lab) Designing main house asset and discussing further steps - September 30, 2024 <br />
 (2 hours) Worked on combining separate work into 1 project & figured out how to git push & pull - October 10, 2024 <br />
 (2.5 hours) Worked on setting up farming background & tilesets - October 28, 2024 <br />
-(5 hours) Finished up background & tileset, resolved merging issues - October 29, 2024 <br /> <br />
-Total time: 14.5 hours
+(5 hours) Finished up background & tileset, resolved merging issues - October 29, 2024 <br />
+(4 hours) Started working on crop system: designed & tested first crop - November 5-6, 2024 <br /> <br /> 
+Total time: 18.5 hours
