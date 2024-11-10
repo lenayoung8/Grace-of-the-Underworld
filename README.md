@@ -23,5 +23,6 @@ Total time: 24.5 hours
 (2 hours) Worked on combining separate work into 1 project & figured out how to git push & pull - October 10, 2024 <br />
 (2.5 hours) Worked on setting up farming background & tilesets - October 28, 2024 <br />
 (5 hours) Finished up background & tileset, resolved merging issues - October 29, 2024 <br />
-(4 hours) Started working on crop system: designed & tested first crop - November 5-6, 2024 <br /> <br /> 
-Total time: 18.5 hours
+(4 hours) Started working on crop system: designed & tested first crop - November 5-6, 2024 <br />
+(4 hours) Finalized 2 crop designs & implemented their growing cycles - November 8 & 10, 2024 <br /> <br /> 
+Total time: 22.5 hours
