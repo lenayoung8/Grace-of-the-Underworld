@@ -16,6 +16,7 @@ var walkingAnimDictionary = {
 							"down":"walkForward",
 							} 
 
+@export var inventory: Inventory
 
 
 func get_input():
