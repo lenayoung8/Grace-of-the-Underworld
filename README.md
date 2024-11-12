@@ -13,7 +13,10 @@
 (2 hours  | October 27): Scrapping everything above and redesigning. Made three base sprite animations for Persephone. <br />
 (3 hours  | October 28): Coded a base walking system for Persephone using the three base sprite animations above. <br />
 ~ (24.5 hours total) ~ <br /> <br />
-Total time: 24.5 hours
+(2 hours | November 2): Learning & working on an inventory system. <br />
+(2 hours | November 12): Continuing to work on the inventory system. <br />
+~ (28 hours total) ~ <br /> <br />
+Total time: 28 hours
 
 # Lena’s Time Log:
 (0.5 hours) Started brainstorming game ideas - September 19, 2024 <br />
