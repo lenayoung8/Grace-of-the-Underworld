@@ -10,3 +10,5 @@ func _change_scene() -> void:
 	print("Changing scene to farm.tscn...")
 	get_tree().change_scene_to_file("res://farm.tscn")
 	
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scripts/characterMovement/characterMovement.tscn")
