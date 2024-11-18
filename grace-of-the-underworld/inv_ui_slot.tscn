@@ -1,15 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6u7fedhmeo2b"]
+[gd_scene load_steps=3 format=3 uid="uid://c6u7fedhmeo2b"]
 
 [ext_resource type="Texture2D" uid="uid://b7s262dng6n57" path="res://art/test/InvenUI InnerBox.png" id="1_akx2x"]
+[ext_resource type="Script" path="res://inv_ui_slot.gd" id="1_xy4s4"]
 
 [node name="inv_ui_slot" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(16, 16)
 offset_right = 16.0
 offset_bottom = 16.0
+script = ExtResource("1_xy4s4")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="invSlot" type="Sprite2D" parent="."]
 position = Vector2(0, -0.999996)
 scale = Vector2(0.108974, 0.119205)
 texture = ExtResource("1_akx2x")
 centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="itemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
