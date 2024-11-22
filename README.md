@@ -28,5 +28,6 @@ TOTAL TIME: 28 HRS
 (5 hours) Finished up background & tileset, resolved merging issues - October 29, 2024 <br />
 (4 hours) Started working on crop system: designed & tested first crop - November 5-6, 2024 <br />
 (4 hours) Finalized 2 crop designs & implemented their growing cycles - November 8 & 10, 2024 <br />
-(0.75 hours) Met and worked on merging our separate branches to main, discussed next steps in project <br /> <br /> 
-Total time: 23.25 hours
+(0.75 hours) Met and worked on merging our separate branches to main, discussed next steps in project <br /> 
+(2 hours) Worked on sizing & combining Persephone sprite & inventory into farm, and started trying to increase growth cycles <br /> <br /> 
+Total time: 25.25 hours
