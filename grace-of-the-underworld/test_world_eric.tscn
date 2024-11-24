@@ -1,12 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://dic0271ebd0wk"]
+[gd_scene load_steps=4 format=3 uid="uid://dic0271ebd0wk"]
 
 [ext_resource type="PackedScene" uid="uid://di4xoc846bq1d" path="res://scripts/characterMovement/characterMovement.tscn" id="1_uygqv"]
 [ext_resource type="PackedScene" uid="uid://dt8332q2pw5fj" path="res://inv_ui.tscn" id="2_sghng"]
+[ext_resource type="PackedScene" uid="uid://cfdd4xxbk6nre" path="res://test_collectible.tscn" id="3_23g6j"]
 
 [node name="testWorldEric" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_uygqv")]
+position = Vector2(177, 366)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="invUI" parent="CanvasLayer" instance=ExtResource("2_sghng")]
+
+[node name="test_collectible" parent="." instance=ExtResource("3_23g6j")]
+position = Vector2(93, 323)
+
+[node name="test_collectible2" parent="." instance=ExtResource("3_23g6j")]
+position = Vector2(228, 304)
+
+[node name="test_collectible3" parent="." instance=ExtResource("3_23g6j")]
+position = Vector2(127, 226)

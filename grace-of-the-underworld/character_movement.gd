@@ -1,6 +1,10 @@
 extends CharacterBody2D
 
+# Export is how we create variables that can be EXPORTED
+# But they're essentially still variables! varName = thing/object/whatever/
 @export var speed = 400
+@export var item: InvItem # For example, now item = the Node/Scene InvItem
+
 
 # Our dictionary! Essentially a map data-structure w/ key,val pair
 # https://docs.godotengine.org/en/3.0/classes/class_dictionary.html#class-dictionary
@@ -39,6 +43,7 @@ func get_input():
 func _ready():
 	$Sprite2D/PlayerAnim.play("walkForward")
 
+# How things move... but how??
 func _physics_process(_delta):
 	get_input()
 	move_and_slide()
@@ -54,4 +59,10 @@ func _physics_process(_delta):
 		#
 	#move_and_collide(velocity * delta)
 	
-	
+
+# If you call player.collect(item) in an object's script,
+# it passes that object as an item to this function
+# and that's how we add it to our inventory array!
+# (by calling inventory.insert(item)... so we now move to inventory.gd script!
+func collect(item):
+	inventory.insert(item) # Inserting the item into inventory array
