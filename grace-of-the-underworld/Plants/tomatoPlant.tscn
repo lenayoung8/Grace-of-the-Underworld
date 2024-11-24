@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbsxpgbl5oyqf"]
+
+[ext_resource type="Script" path="res://Plants/tomatoPlant.gd" id="1_e5sve"]
+[ext_resource type="Texture2D" uid="uid://ijm6ncdlio3n" path="res://crop assets/tomato.png" id="2_l41r8"]
+
+[node name="tomatoPlant" type="Node2D"]
+z_index = 10
+y_sort_enabled = true
+script = ExtResource("1_e5sve")
+
+[node name="Tomato" type="Sprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(0, -17)
+scale = Vector2(0.149382, 0.14443)
+texture = ExtResource("2_l41r8")
+hframes = 7
+frame = 1
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

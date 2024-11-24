@@ -1,9 +1,7 @@
 extends Panel
-
 @onready var itemVisual: Sprite2D = $CenterContainer/Panel/itemDisplay
 @onready var amount_text: Label = $CenterContainer/Panel/Label # Set amount_text = to the label we have in our inv_ui_slot scene!
 															   # Just like Roblox when you find a path and set a var to that path lol
-
 # slot here is any variable! It's now linked to InvSlot
 # Has the same name as the slot in inventory.gd, but are not the same variables!
 # It's just whateverWeWantToCallIt : theActualThing
