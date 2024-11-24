@@ -10,6 +10,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 90.0
 offset_bottom = 66.0
+scale = Vector2(5, 5)
 script = ExtResource("1_mhg8t")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
