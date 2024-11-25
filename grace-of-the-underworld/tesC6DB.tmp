@@ -12,10 +12,6 @@ position = Vector2(177, 366)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="invUI" parent="CanvasLayer" instance=ExtResource("2_sghng")]
-offset_left = 6.0
-offset_top = -89.0
-offset_right = 96.0
-offset_bottom = -23.0
 
 [node name="test_collectible" parent="." instance=ExtResource("3_23g6j")]
 position = Vector2(93, 323)

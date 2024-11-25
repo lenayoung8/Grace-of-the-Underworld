@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cfdd4xxbk6nre"]
 
 [ext_resource type="Script" path="res://test_collectible.gd" id="1_50386"]
-[ext_resource type="Resource" uid="uid://cp730ifugcu2t" path="res://inventory/items/testDuckResource.tres" id="2_s7r7t"]
-[ext_resource type="Texture2D" uid="uid://cglrl42338bup" path="res://art/test/duck.png" id="2_touea"]
+[ext_resource type="Resource" uid="uid://t1hp4dvbw80d" path="res://inventory/items/duck.tres" id="2_s7r7t"]
+[ext_resource type="Texture2D" uid="uid://cglrl42338bup" path="res://art/test/duck.png" id="3_pvg4i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o1w5n"]
 radius = 15.0333
@@ -12,7 +12,7 @@ script = ExtResource("1_50386")
 item = ExtResource("2_s7r7t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_touea")
+texture = ExtResource("3_pvg4i")
 
 [node name="interactable_area" type="Area2D" parent="."]
 
