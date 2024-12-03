@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckqyadgkvi3y0"]
+
+[ext_resource type="Texture2D" uid="uid://kuxoy4l5l5lv" path="res://art/Screenshot 2024-01-08 220442.png" id="1_ktnyq"]
+[ext_resource type="Texture2D" uid="uid://dvic5afqdp5is" path="res://art/test/Temporary Dialogue Box.png" id="2_61mo0"]
+
+[node name="testDialogueInteraction" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+custom_minimum_size = Vector2(200, 50)
+offset_left = 78.0
+offset_top = 179.0
+offset_right = 278.0
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "[Insert text here]"
+autowrap_mode = 3
+clip_text = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(358, 173)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_ktnyq")
+
+[node name="TemporaryDialogueBox" type="Sprite2D" parent="."]
+position = Vector2(173, 191)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_61mo0")

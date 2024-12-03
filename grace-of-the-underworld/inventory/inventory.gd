@@ -7,6 +7,7 @@ signal update # I actually dk
 # Export the variable into the inspector page
 # the : initializes slots to Array[InvSlot]
 @export var slots:Array [InvSlot]
+@export var usedSlots: int # My own little export variable! Tracks number of used slots
 
 # Essentially, this function tracks the amount of items
 # in a given slot after it is inserted into the inventory
@@ -38,6 +39,19 @@ func insert(item: InvItem):
 	if !emptySlots.is_empty():
 		emptySlots[0].item = item
 		emptySlots[0].amount = 1
+		usedSlots += 1
 			
+	
+	
 	update.emit() # Updates the inventory(?)
 	
+func remove(item: InvItem):
+	var itemSlots = slots.filter(func(slot): return slot.item == item)
+	if !slots.is_empty():
+		slots.remove_at(0)
+		#itemSlots[0].amount = 0
+		usedSlots -= 1
+		
+	
+	update.emit()
+	print("Test") # I can't believe my hour of work is three simple lines wtf

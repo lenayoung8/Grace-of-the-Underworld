@@ -3,11 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://b7s262dng6n57" path="res://art/test/InvenUI InnerBox.png" id="1_akx2x"]
 [ext_resource type="Script" path="res://inv_ui_slot.gd" id="1_xy4s4"]
 
-[node name="inv_ui_slot" type="Panel"]
+[node name="inv_ui_slot" type="Button"]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(16, 16)
 offset_right = 16.0
 offset_bottom = 16.0
+button_mask = 3
 script = ExtResource("1_xy4s4")
 
 [node name="invSlot" type="Sprite2D" parent="."]
@@ -42,3 +43,6 @@ theme_override_constants/outline_size = 3
 theme_override_constants/shadow_outline_size = 3
 text = "99"
 horizontal_alignment = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
