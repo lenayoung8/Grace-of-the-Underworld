@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://TileMaps/farm.gd" id="1_yv8t6"]
 [ext_resource type="Texture2D" uid="uid://bnmyhlyr7i4bd" path="res://tileset assets/Sprout Lands/Grass.png" id="2_dwbgc"]
 [ext_resource type="Texture2D" uid="uid://bdvvbdr3p7gwe" path="res://tileset assets/Sprout Lands/Tilled_Dirt_Wide_v2.png" id="3_phj8n"]
-[ext_resource type="Texture2D" uid="uid://bijgb2xf8w8fd" path="res://tileset assets/Sprout Lands/Water.tres" id="3_w7na1"]
+[ext_resource type="Texture2D" path="res://tileset assets/Sprout Lands/Water.tres" id="3_w7na1"]
 [ext_resource type="Texture2D" uid="uid://c8fjl6yox1n26" path="res://tileset assets/Sprout Lands/Fences.png" id="4_dy7ey"]
 [ext_resource type="PackedScene" uid="uid://di4xoc846bq1d" path="res://scripts/characterMovement/characterMovement.tscn" id="5_soic1"]
 [ext_resource type="Texture2D" uid="uid://bxidi7h4i2erd" path="res://night cycle/lioght.png" id="6_ydel4"]
