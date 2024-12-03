@@ -52,6 +52,5 @@ func remove(item: InvItem):
 		#itemSlots[0].amount = 0
 		usedSlots -= 1
 		
-	
 	update.emit()
 	print("Test") # I can't believe my hour of work is three simple lines wtf

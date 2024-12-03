@@ -26,14 +26,16 @@ func connectSlots():
 func onSlotClicked(slot):
 	
 	var itemVisual = slot.get_node("CenterContainer/Panel/itemDisplay")
+	await get_tree().create_timer(.05).timeout # Wait()
 	
 	if clickType == "RIGHT":
 		
 		var loadDuck # Declare it
-		
+		print(itemVisual.texture)
 		# Add an if-statement and block for each texture we want to compare.
 		# Basically, unique if-statement and load for every texture
-		if str(itemVisual.texture) == str("<CompressedTexture2D#-9223372005397494473>"): # Duck's Compressed Texture ID
+		# ISSUE: whenever the art area is updated... the texture ID becomes different :D
+		if str(itemVisual.texture) == str("<CompressedTexture2D#-9223372005380717256>"): # Duck's Compressed Texture ID
 			# Load the duck!
 			loadDuck = load("res://test_collectible.tscn") # Make a new load for every texture we want to compare
 			textureFound = true
@@ -43,7 +45,12 @@ func onSlotClicked(slot):
 		# If we found a texture, then the rest is history!
 		# The inv.usedSlots > 0 is to prevent clicking too fast and reaching second-if when duck no exist anymore
 		# Now... create the item!
+		print(inv.usedSlots)
+		
+		# ISSUE: whenever the art area is updated... the texture ID becomes different :D
 		if textureFound == true and inv.usedSlots > 0:
+			
+			print("Hi!")
 			# Create the new duck!
 			# var loadDuck = load("res://test_collectible.tscn") # Make a new load for every texture we want to compare
 			var instantiateDuck = loadDuck.instantiate()
@@ -74,7 +81,9 @@ func onSlotClicked(slot):
 			instantiateDuck.get_node("interactable_area/CollisionShape2D").disabled = false
 			
 			# Finishing touch! Set textureFound to false again so it doesn't backload
+			# Also do a wait statement to stop spam
 			textureFound = false
+			
 	
 # Updates our inventory item slots!
 # Well what does it do specifically...
@@ -82,7 +91,7 @@ func onSlotClicked(slot):
 func update_slots():
 	for i in range(min(inv.slots.size(), slots.size())):
 		slots[i].update(inv.slots[i])
-
+	
 func _process(delta):
 	if Input.is_action_just_pressed("inventory"):
 		if isOpen:
@@ -92,10 +101,11 @@ func _process(delta):
 			update_slots()
 			open()
 
-
 # Is a signal function!
 # So it auto-plays without calling whenever an input is made... such as mouse clicks!
 func _input(event: InputEvent):
+	
+	await get_tree().create_timer(.1).timeout # Wait()
 	
 	## If the input on the GUI is a mouse button...
 	

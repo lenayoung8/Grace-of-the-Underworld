@@ -32,7 +32,7 @@ func get_input():
 	if Input.is_action_pressed("right"):
 		$Sprite2D/PlayerAnim.play("walkRight")
 	if Input.is_action_pressed("up"):
-		$Sprite2D/PlayerAnim.play("walkForward")
+		$Sprite2D/PlayerAnim.play("walkBackward")
 	if Input.is_action_pressed("down"):
 		$Sprite2D/PlayerAnim.play("walkForward")
 		

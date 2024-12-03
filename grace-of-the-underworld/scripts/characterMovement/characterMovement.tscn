@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://di4xoc846bq1d"]
+[gd_scene load_steps=12 format=3 uid="uid://di4xoc846bq1d"]
 
 [ext_resource type="Script" path="res://character_movement.gd" id="1_1q4l1"]
 [ext_resource type="Resource" uid="uid://t2pd6ioeb1mk" path="res://inventory/playerInventory.tres" id="2_6mbmw"]
-[ext_resource type="Texture2D" uid="uid://cxsog3qs52x1g" path="res://art/character/Test SpriteSheet2.png" id="2_n3350"]
+[ext_resource type="Texture2D" uid="uid://dwii64q6d18bb" path="res://art/character/asfaf.png" id="3_1anvo"]
 [ext_resource type="PackedScene" uid="uid://dt8332q2pw5fj" path="res://inv_ui.tscn" id="4_mfcpd"]
 
 [sub_resource type="Animation" id="Animation_ldy85"]
@@ -65,9 +65,25 @@ tracks/0/keys = {
 "values": [2]
 }
 
+[sub_resource type="Animation" id="Animation_ab7qe"]
+resource_name = "walkBackward"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_10rfv"]
 _data = {
 "RESET": SubResource("Animation_ldy85"),
+"walkBackward": SubResource("Animation_ab7qe"),
 "walkForward": SubResource("Animation_qxueb"),
 "walkLeft": SubResource("Animation_iwgf4"),
 "walkRight": SubResource("Animation_vpkoc")
@@ -86,8 +102,8 @@ inventory = ExtResource("2_6mbmw")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-213, -41)
-texture = ExtResource("2_n3350")
-hframes = 3
+texture = ExtResource("3_1anvo")
+hframes = 4
 
 [node name="PlayerAnim" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
