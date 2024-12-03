@@ -16,7 +16,7 @@
 (2 hours | November 2): Learning & working on an inventory system. <br />
 (2 hours | November 12): Continuing to work on the inventory system. <br />
 ~ (28 hours total) ~ <br />
-(0.75 hours | November 22): Met and worked on merging our separate branches to main, discussed next steps in project <br /> 
+(0.75 hours | November 18): Met and worked on merging our separate branches to main, discussed next steps in project <br /> 
 ~ (28.75 hours total) ~ <br />
 (2.5 hours | November 24): Finished the first portion of the inventory system: adding items to inventory. <br />
 ~ (31.25 hours total) ~ <br />
