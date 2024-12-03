@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxw5b7e6furch"]
+
+[ext_resource type="Texture2D" uid="uid://ripoeg5yfgl1" path="res://art/test/pxhy.png" id="1_7ok03"]
+[ext_resource type="Script" path="res://test_npc_fish_dialogue.gd" id="2_6iaxd"]
+
+[node name="test_npc_eric_2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(135, 31)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_7ok03")
+script = ExtResource("2_6iaxd")
