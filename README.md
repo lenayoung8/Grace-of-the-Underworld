@@ -24,7 +24,9 @@
 ~ (37.25 hours total) ~ <br />
 (8 hours | December 2): Painstakingly coded and debugged a drop item from inventory system. <br />
 ~ (45.25 hours total) ~ <br />
-<br /> TOTAL TIME: 45.25 HRS
+(3.5 hours | December 3): Finished(?) the title screen and added more to the walking animation. Found a bug in inventory and almost cried. <br />
+~ (48.75 hours total) ~ <br />
+<br /> TOTAL TIME: 48.75 HRS
 
 # Lena’s Time Log:
 (0.5 hours) Started brainstorming game ideas - September 19, 2024 <br />
