@@ -27,7 +27,6 @@ layout_mode = 2
 
 [node name="itemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
 
-
 [node name="Label" type="Label" parent="CenterContainer/Panel"]
 custom_minimum_size = Vector2(40, 23)
 layout_mode = 0
@@ -43,5 +42,3 @@ theme_override_constants/outline_size = 3
 theme_override_constants/shadow_outline_size = 3
 text = "99"
 horizontal_alignment = 2
-
-

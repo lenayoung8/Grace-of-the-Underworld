@@ -15,8 +15,16 @@
 ~ (24.5 hours total) ~ <br />
 (2 hours | November 2): Learning & working on an inventory system. <br />
 (2 hours | November 12): Continuing to work on the inventory system. <br />
-~ (28 hours total) ~ <br /> <br />
-TOTAL TIME: 28 HRS
+~ (28 hours total) ~ <br />
+(0.75 hours | November 18): Met and worked on merging our separate branches to main, discussed next steps in project <br /> 
+~ (28.75 hours total) ~ <br />
+(2.5 hours | November 24): Finished the first portion of the inventory system: adding items to inventory. <br />
+~ (31.25 hours total) ~ <br />
+(6 hours | November 25): Created a working dialogue system and accompanying GUI. Drew concept art. <br />
+~ (37.25 hours total) ~ <br />
+(8 hours | December 2): Painstakingly coded and debugged a drop item from inventory system. <br />
+~ (45.25 hours total) ~ <br />
+<br /> TOTAL TIME: 45.25 HRS
 
 # Lena’s Time Log:
 (0.5 hours) Started brainstorming game ideas - September 19, 2024 <br />
@@ -29,5 +37,6 @@ TOTAL TIME: 28 HRS
 (4 hours) Started working on crop system: designed & tested first crop - November 5-6, 2024 <br />
 (4 hours) Finalized 2 crop designs & implemented their growing cycles - November 8 & 10, 2024 <br />
 (0.75 hours) Met and worked on merging our separate branches to main, discussed next steps in project <br /> 
-(2 hours) Worked on sizing & combining Persephone sprite & inventory into farm, and started trying to increase growth cycles <br /> <br /> 
-Total time: 25.25 hours
+(2 hours) Worked on sizing & combining Persephone sprite & inventory into farm, and started trying to increase growth cycles <br /> 
+(2.15 hours) Figured out how to delay crop growth cycles, implemented day/night cycle based on real-time & set up camera to follow Persephone<br /> <br /> 
+Total time: 27.5 hours

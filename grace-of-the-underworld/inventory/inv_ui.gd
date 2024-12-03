@@ -29,7 +29,6 @@ func _process(delta):
 			close()
 		else:
 			open()
-			
 	
 func open():
 	visible = true
