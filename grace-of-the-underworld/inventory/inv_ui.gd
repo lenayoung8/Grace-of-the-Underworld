@@ -82,7 +82,7 @@ func onSlotClicked(slot):
 func update_slots():
 	for i in range(min(inv.slots.size(), slots.size())):
 		slots[i].update(inv.slots[i])
-	
+
 func _process(delta):
 	if Input.is_action_just_pressed("inventory"):
 		if isOpen:
@@ -91,6 +91,7 @@ func _process(delta):
 		else:
 			update_slots()
 			open()
+
 
 # Is a signal function!
 # So it auto-plays without calling whenever an input is made... such as mouse clicks!
