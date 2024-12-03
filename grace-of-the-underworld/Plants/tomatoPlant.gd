@@ -1,17 +1,22 @@
 extends Node2D
 
+# create child node variables used in tomato plant
 @onready var timer = $Timer
 @onready var tomatoPlant = $Tomato
-var stage = 0
+var stage = 0 # start plant at first growth stage
 
-# Called when the node enters the scene tree for the first time.
+# when plant is instantiated: immediately start growth timer & set its displayed icon to stage 0 (seeds)
 func _ready():
 	timer.start()
-	tomatoPlant.frame = 1
+	tomatoPlant.frame = 0
 
 
+# "switch" statement basically matches the plant's growth stage to the specific icon it should be displaying
 func _process(delta):
+	
 	match stage:
+		0:
+			tomatoPlant.frame = 0
 		1:
 			tomatoPlant.frame = 1
 		2:
@@ -26,8 +31,7 @@ func _process(delta):
 			tomatoPlant.frame = 6
 			
 
-
+# function controls incremented growth, stops when fully grown
 func _on_timer_timeout():
-	if stage < 7:
-		stage += 1
-	   
+	
+	if stage < 7: stage += 1
