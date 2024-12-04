@@ -41,5 +41,7 @@
 (0.75 hours) Met and worked on merging our separate branches to main, discussed next steps in project - November 18, 2024  <br /> 
 (2 hours) Worked on sizing & combining Persephone sprite & inventory into farm, and started trying to increase growth cycles - November 22, 2024 <br /> 
 (2.5 hours) Figured out how to delay crop growth cycles, added fence & edited tilemap, implemented day/night cycle based on real-time, & set up camera to follow Persephone - November 24, 2024 <br />
-(4.5 hours) Set up in-game timer to base day/night cycle off of & made plants only plantable on dirt tiles - December 2, 2024 <br /> <br /> 
-Total time: 32.25 hours
+(4.5 hours) Set up in-game timer to base day/night cycle off of & made plants only plantable on dirt tiles - December 2, 2024 <br />
+(3 hours) Fixed any bugs found during demo, fixed character movement & collisions - December 3 & 4, 2024 <br /> <br />
+
+Total time: 35.25 hours
