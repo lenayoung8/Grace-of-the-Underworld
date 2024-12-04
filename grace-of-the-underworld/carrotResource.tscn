@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckikg4r4r8ekj"]
+
+[ext_resource type="Script" path="res://test_collectible.gd" id="1_p4dhd"]
+[ext_resource type="Resource" uid="uid://demoubrxltts1" path="res://inventory/items/carrot.tres" id="2_fdrly"]
+[ext_resource type="Texture2D" uid="uid://b1yuin1b5mh3x" path="res://Plants/carrot.png" id="3_411qi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o1w5n"]
+radius = 15.0333
+
+[node name="test_collectible" type="StaticBody2D"]
+z_index = 50
+script = ExtResource("1_p4dhd")
+item = ExtResource("2_fdrly")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_411qi")
+
+[node name="interactable_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactable_area"]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_o1w5n")
+
+[connection signal="body_entered" from="interactable_area" to="." method="_on_interactable_area_body_entered"]

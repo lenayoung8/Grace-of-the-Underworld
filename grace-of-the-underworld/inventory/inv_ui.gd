@@ -16,6 +16,7 @@ func _ready():
 	close()
 	
 func connectSlots():
+	print("Connected")
 	for slot in slots:
 		var callable = Callable(onSlotClicked)
 		callable = callable.bind(slot)
@@ -26,51 +27,52 @@ func connectSlots():
 func onSlotClicked(slot):
 	
 	var itemVisual = slot.get_node("CenterContainer/Panel/itemDisplay")
+	print("itemVisual")
 	await get_tree().create_timer(.05).timeout # Wait()
-	
+
 	if clickType == "RIGHT":
 		
 		var loadDuck # Declare it
-		print(itemVisual.texture)
+		print(itemVisual.texture
+		)
+		
 		# Add an if-statement and block for each texture we want to compare.
 		# Basically, unique if-statement and load for every texture
-		# ISSUE: whenever the art area is updated... the texture ID becomes different :D
-		if str(itemVisual.texture) == str("<CompressedTexture2D#-9223372005380717256>"): # Duck's Compressed Texture ID
+		# Now how do we avoid finding the texture every time... what about metadata (for future reference)?! :D
+		
+		if str(itemVisual.texture) == str("<CompressedTexture2D#-9223372005380717256>" or str(itemVisual.texture) == str("<CompressedTexture2D#-9223372001840724656>")): # Duck's Compressed Texture ID
 			# Load the duck!
 			loadDuck = load("res://test_collectible.tscn") # Make a new load for every texture we want to compare
 			textureFound = true
 		
-		# if tomato texture, then load, texture true
-		
+		if str(itemVisual.texture) == str("<CompressedTexture2D#-9223372005380717256>" or str(itemVisual.texture) == str("<CompressedTexture2D#-9223371884668646237>")): # Tomato's Compressed Texture ID
+			# Load the tomato!
+			loadDuck = load("res://tomatoResource.tscn") # Make a new load for every texture we want to compare
+			textureFound = true
+	
 		# If we found a texture, then the rest is history!
 		# The inv.usedSlots > 0 is to prevent clicking too fast and reaching second-if when duck no exist anymore
 		# Now... create the item!
 		print(inv.usedSlots)
 		
-		# ISSUE: whenever the art area is updated... the texture ID becomes different :D
 		if textureFound == true and inv.usedSlots > 0:
 			
 			print("Hi!")
-			# Create the new duck!
-			# var loadDuck = load("res://test_collectible.tscn") # Make a new load for every texture we want to compare
+
 			var instantiateDuck = loadDuck.instantiate()
 			add_child(instantiateDuck)
 			
 			# Now let's move the duck to the player's location & move it to its own parent!
+			# Make sure to parent to /root or the new item will follow the player's movement haha
 			
-			#instantiateDuck.reparent(self)
 			instantiateDuck.set_global_position(get_node("/root/testWorldEric/Character/Sprite2D").get_global_position())
-			#instantiateDuck.position.y -= -10
-			instantiateDuck.reparent(get_node("/root")) # Okay so, reparent(self) was the issue that caused the new duck to follow the player's exact movements
+			instantiateDuck.reparent(get_node("/root"))
 			
 			# Now, let's remove the duck from the inventory and update the UI!
 			# An hour of work just to write these two lines below btw wtf
 			
 			var player = get_node("/root/testWorldEric/Character")
-			# Okay yep, item is nil... WHAT DO WE DO
-			# maybe I search through the array to find the... TEXTURE
-			# YES! THE TEXTURE! EUREKA!
-			# like if an item has a texture similar to this...
+	
 			player.inventory.remove(slot.item)
 			print(player.inventory.usedSlots)
 			
@@ -82,16 +84,16 @@ func onSlotClicked(slot):
 			
 			# Finishing touch! Set textureFound to false again so it doesn't backload
 			# Also do a wait statement to stop spam
+			
 			textureFound = false
 			
 	
 # Updates our inventory item slots!
-# Well what does it do specifically...
-# Okay, it updates the UI specifically, since inv.slots IS our ui scene and display
 func update_slots():
 	for i in range(min(inv.slots.size(), slots.size())):
 		slots[i].update(inv.slots[i])
-	
+
+# Process takes inputs
 func _process(delta):
 	if Input.is_action_just_pressed("inventory"):
 		if isOpen:
@@ -107,7 +109,7 @@ func _input(event: InputEvent):
 	
 	await get_tree().create_timer(.1).timeout # Wait()
 	
-	## If the input on the GUI is a mouse button...
+	# If the input on the GUI is a mouse button...
 	
 	if event.is_pressed() and event is InputEventMouseButton:
 		
@@ -122,7 +124,8 @@ func _input(event: InputEvent):
 				clickType = "RIGHT"
 				
 		print (clickType)
-			
+
+# Opens and closes the GUI 
 func open():
 	visible = true
 	isOpen = true

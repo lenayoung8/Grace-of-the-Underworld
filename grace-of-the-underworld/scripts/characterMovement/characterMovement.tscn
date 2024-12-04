@@ -98,6 +98,7 @@ position = Vector2(234, 178)
 scale = Vector2(0.1, 0.1)
 script = ExtResource("1_1q4l1")
 inventory = ExtResource("2_6mbmw")
+metadata/player = "player"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -112,10 +113,10 @@ libraries = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-195, -296.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_oqr0p")
 
 [node name="invUI" parent="." instance=ExtResource("4_mfcpd")]
+z_index = 100
 offset_left = -441.0
 offset_top = -875.0
 offset_right = -351.0

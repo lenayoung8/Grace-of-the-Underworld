@@ -20,7 +20,17 @@ offset_top = 423.0
 offset_right = 700.0
 offset_bottom = 562.0
 theme_override_font_sizes/font_size = 30
-text = "PLAY GAME (CLICK HERE!!!)"
+text = "PLAY"
+autowrap_mode = 3
+
+[node name="Button2" type="Button" parent="."]
+z_index = 10
+offset_left = 780.0
+offset_top = 426.0
+offset_right = 1027.0
+offset_bottom = 559.0
+theme_override_font_sizes/font_size = 30
+text = "ENTER TEST WORLD"
 autowrap_mode = 3
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
@@ -123,3 +133,4 @@ scale = Vector2(1.765, 1.845)
 texture = ExtResource("9_lojfa")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

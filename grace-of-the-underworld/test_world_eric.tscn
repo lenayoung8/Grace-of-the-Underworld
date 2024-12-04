@@ -12,37 +12,37 @@
 [node name="tempFolder" type="Node2D" parent="."]
 visible = false
 
-[node name="Character" parent="tempFolder" instance=ExtResource("1_uygqv")]
+[node name="Character" parent="." instance=ExtResource("1_uygqv")]
 position = Vector2(613, 419)
 scale = Vector2(0.75, 0.75)
 
-[node name="test_collectible" parent="tempFolder" instance=ExtResource("3_23g6j")]
+[node name="test_collectible" parent="." instance=ExtResource("3_23g6j")]
 position = Vector2(93, 323)
 scale = Vector2(5, 5)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="tempFolder"]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="test_collectible2" parent="tempFolder" instance=ExtResource("3_23g6j")]
+[node name="test_collectible2" parent="." instance=ExtResource("3_23g6j")]
 position = Vector2(1008, 164)
 scale = Vector2(5, 5)
 
-[node name="test_collectible3" parent="tempFolder" instance=ExtResource("3_23g6j")]
+[node name="test_collectible3" parent="." instance=ExtResource("3_23g6j")]
 position = Vector2(178, 86)
 scale = Vector2(5, 5)
 
-[node name="testNPC_Eric" parent="tempFolder" instance=ExtResource("4_hltgj")]
+[node name="testNPC_Eric" parent="." instance=ExtResource("4_hltgj")]
 position = Vector2(-520, -185)
 scale = Vector2(10, 10)
 
-[node name="testDialogueInteraction" parent="tempFolder" instance=ExtResource("5_kpdqo")]
+[node name="testDialogueInteraction" parent="." instance=ExtResource("5_kpdqo")]
 position = Vector2(137, 62)
 scale = Vector2(2.5, 2.5)
 
-[node name="test_npc_eric_2" parent="tempFolder" instance=ExtResource("5_fru2n")]
+[node name="test_npc_eric_2" parent="." instance=ExtResource("5_fru2n")]
 position = Vector2(-608, -117)
 scale = Vector2(10, 10)
 
-[node name="UnderworldLake" type="Sprite2D" parent="tempFolder"]
+[node name="UnderworldLake" type="Sprite2D" parent="."]
 z_index = -2
 z_as_relative = false
 position = Vector2(577, 338)

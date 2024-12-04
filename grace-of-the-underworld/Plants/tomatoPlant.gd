@@ -30,6 +30,17 @@ func _process(delta):
 		6:
 			tomatoPlant.frame = 6
 			
+			await get_tree().create_timer(2).timeout # Wait()
+			
+			var loadDuck = load("res://tomatoResource.tscn")
+			var instantiateResource = loadDuck.instantiate()
+			add_child(instantiateResource)
+			
+			instantiateResource.set_global_position(tomatoPlant.get_global_position())
+			#instantiateDuck.position.y -= -10
+			instantiateResource.reparent(get_node("/root"))
+			
+			self.queue_free()
 
 # function controls incremented growth, stops when fully grown
 func _on_timer_timeout():
