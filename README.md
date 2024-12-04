@@ -26,7 +26,10 @@
 ~ (45.25 hours total) ~ <br />
 (5.5 hours | December 3): Finished(?) the title screen and added more to the walking animation. Found a bug in inventory and almost cried. <br />
 ~ (50.75 hours total) ~ <br />
-<br /> TOTAL TIME: 50.75 HRS
+(1 hour | December 3): Worked on fixing bugs during demo! <br />
+(2.25 hours | December 4): Crops now drop collectible items! :D <br />
+~ (54 hours total) ~ <br />
+<br /> TOTAL TIME: 54 HRS
 
 # Lena’s Time Log:
 (0.5 hours) Started brainstorming game ideas - September 19, 2024 <br />
