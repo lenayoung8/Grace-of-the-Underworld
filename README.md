@@ -1,13 +1,18 @@
-# Grace of the Underworld
+# Grace of the Underworld <br />
+
+Group: 28 <br />
+Members: Eric Yang & Lena Young <br />
+Meetups: We met several times in-person across the project. Our meetups are recorded in our time log. <br />
+Time Log: Below! :D <br />
 
 # Eric’s Time Log: <br />
 ~ (0 hours total) ~ <br />
 (1.5 hours) Learning and setting up Godot. <br />
 (0.5 hours) Setting up a menu to play/exit. <br />
-(2.5 hours) Drawing semi-realistic clouds and coding them to move. <br />
+(2.5 hours | September 30) Drawing semi-realistic clouds and coding them to move & discussing next steps. <br />
 (2 hours in lab) Drawing another rendition to replace the semi-realistic clouds. <br />
 (1 hour) Coding the multiple layers of the current background rendition for the menu to move <br />
-(2 hours) Worked on combining separate work into 1 project & figured out how to git push & pull - October 10, 2024 <br />
+(2 hours | October 10) Worked on combining separate work into 1 project & figured out how to git push & pull <br />
 ~ (9.5 hours total) ~ <br />
 (10+ hours | October 21 - October 26): Drawing and designing the portrait art for Persephone. <br />
 (2 hours  | October 27): Scrapping everything above and redesigning. Made three base sprite animations for Persephone. <br />
