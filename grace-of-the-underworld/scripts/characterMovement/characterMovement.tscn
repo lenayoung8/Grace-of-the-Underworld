@@ -90,7 +90,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oqr0p"]
-size = Vector2(297, 480)
+size = Vector2(250, 473)
 
 [node name="Character" type="CharacterBody2D"]
 texture_filter = 1
@@ -111,7 +111,8 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-209, -293)
+position = Vector2(-195, -296.5)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_oqr0p")
 
 [node name="invUI" parent="." instance=ExtResource("4_mfcpd")]

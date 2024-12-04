@@ -11,15 +11,15 @@ const numInGameMinsPerRealMin = (2 * PI) / minsPerDay
 
 # CREATE ALL CROP VARIABLES
 @onready var tileMap = $TileMap
-@onready var layers = $"TileMap.get_children()"
-const dirtID = 1
+const dirtID = 1 # used later to identify if a tile is dirt
+
 # preload crop scenes into const variables to place later
 const carrotPlant = preload("res://Plants/carrotPlant.tscn")
 const tomatoPlant = preload("res://Plants/tomatoPlant.tscn")
-
+ 
 # CREATE ALL DAY/NIGHT CYCLE VARIABLES
 @onready var darkness = get_node("Ambient")
-@onready var light = get_node("TileMap/Sprites/Persephone/NightLight")
+@onready var light = get_node("Persephone/NightLight")
 
 # define color schemes for various times of day
 var colorScheme = {
@@ -112,7 +112,7 @@ func _unhandled_input(event):
 		var tilePosition = tileMap.local_to_map(localPosition)
 		
 		# now, we want to get the id of the tile we clicked on
-		var layer = tileMap.get_node("Dirt")
+		var layer = tileMap.get_node("CollisionTiles")
 		var srcID = layer.get_cell_source_id(tilePosition)
 		
 		# if it matches the dirt id, we can plant on it!
